@@ -39,10 +39,10 @@ const Sidebar = () => {
           {sidebarItems.map((item, index) => {
             const Icon = item.icon === 'Activity' ? require('lucide-react').Activity : item.icon;
             return (
-              <a
+              <button
                 key={index}
-                href="#"
-                className={`flex items-center px-6 py-3 text-sm font-medium ${
+                type="button"
+                className={`flex items-center w-full text-left px-6 py-3 text-sm font-medium ${
                   item.active
                     ? 'text-blue-600 bg-blue-50 border-r-2 border-blue-600'
                     : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'
@@ -50,29 +50,29 @@ const Sidebar = () => {
               >
                 <Icon className="mr-3 h-5 w-5" />
                 {item.label}
-              </a>
+              </button>
             );
           })}
           <div className="px-6 mt-8 mb-6">
             <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide">Tools</p>
           </div>
           {toolItems.map((item, index) => (
-            <a
+            <button
               key={index}
-              href="#"
-              className="flex items-center px-6 py-3 text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50"
+              type="button"
+              className="flex items-center w-full text-left px-6 py-3 text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50"
             >
               <item.icon className="mr-3 h-5 w-5" />
               {item.label}
-            </a>
+            </button>
           ))}
         </nav>
       </div>
       <div className="p-6">
-        <a href="#" className="flex items-center text-sm font-medium text-gray-600 hover:text-gray-900">
+        <button type="button" className="flex items-center text-sm font-medium text-gray-600 hover:text-gray-900">
           <Settings className="mr-3 h-5 w-5" />
           Setting
-        </a>
+        </button>
       </div>
     </div>
   );
