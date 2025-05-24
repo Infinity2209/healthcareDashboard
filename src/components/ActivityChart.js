@@ -4,7 +4,7 @@ const ActivityChart = () => {
     const days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
 
     return (
-        <div className="bg-white rounded-xl shadow-sm p-6 mt-8">
+        <div className="bg-white rounded-xl shadow-sm p-6 mt-8  bg-[#e6e8fa]">
             <h3 className="font-semibold text-lg mb-4">Activity</h3>
             <div className="text-sm text-gray-500 mb-4">3 appointment on this week</div>
             <div className="flex items-end space-x-2 h-32">

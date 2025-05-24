@@ -239,9 +239,10 @@
 
 /* Dashboard */
 .dashboard h2 {
-  font-weight: 700;
+  font-weight: 900;
   font-size: 1.5rem;
   margin-bottom: 20px;
+  color: #4e01fc;
 }
 
 .dashboard-top {

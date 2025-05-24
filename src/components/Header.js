@@ -1,14 +1,15 @@
 import React from 'react';
-import { Search, Bell, Plus } from 'lucide-react';
+import { Search, Bell, Plus, ChevronDown } from 'lucide-react';
 
 const Header = () => {
   return (
     <header className="bg-white shadow-sm border-b">
       <div className="flex items-center justify-between px-8 py-4">
         <div className="flex items-center space-x-4">
-          <h1 className="text-2xl font-bold text-gray-900">Dashboard</h1>
+          <h1 className="text-2xl font-bold text-[#4e01fc]">Dashboard</h1>
           <div className="flex items-center space-x-2 text-sm text-gray-500">
             <span>This Week</span>
+            <ChevronDown className="h-4 w-4 text-gray-400" />
           </div>
         </div>
         <div className="flex items-center space-x-4">

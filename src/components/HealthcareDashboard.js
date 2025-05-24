@@ -13,7 +13,7 @@ const HealthcareDashboard = () => {
       {/* Main Content */}
       <div className="flex-1 flex flex-col flex-col overflow-hidden ml-64">
         <Header />
-        <div className="flex flex-1 overflow-hidden p-8 space-x-8 ">
+        <div className="flex flex-1 overflow-hidden p-8 space-x-8">
           {/* Left Content */}
           <div className='flex flex-col w-full'>
             <div className="flex-1 flex flex-row justify-between gap-4">
@@ -24,7 +24,7 @@ const HealthcareDashboard = () => {
           </div>
 
           {/* Right Sidebar */}
-          <div className="w-96 flex flex-col space-y-6 w-[70%]">
+          <div className="w-96 flex flex-col space-y-6 w-[70%] bg-[#e6e8fa] p-4 rounded-lg">
             <CalendarView />
             <AppointmentCards />
             <UpcomingSchedule />

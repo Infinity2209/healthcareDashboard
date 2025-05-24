@@ -8,9 +8,9 @@ const HealthMetricsCards = () => {
     ];
 
     return (
-        <div className="space-y-4">
+        <div className="space-y-4 ">
             {healthMetrics.map((metric, index) => (
-                <div key={index} className="bg-white rounded-xl shadow-sm p-6 flex flex-col items-center justify-between w-full">
+                <div key={index} className="bg-white rounded-xl shadow-sm p-6 flex flex-col items-center justify-between w-full bg-[#e6e8fa]">
                     <div className="flex items-center space-y-4 flex-col">
                         <div className='flex flex-row gap-2'>
                             <div className="text-3xl">{metric.icon}</div>
